@@ -1,0 +1,454 @@
+@import '../css/base.less';
+
+.ant-modal-mask{
+    backdrop-filter: blur(10px);
+}
+.select-mod{
+    .ant-modal-body{
+      padding: 0 !important;
+    }
+}
+.remove-success{
+    .ant-modal-body{
+        background: url('../image/remove-deposit-bg.png') !important;
+        background-size: 100% 100% !important;
+    }
+}
+.ant-spin-spinning{
+    width: 100%;
+    position: relative;
+    .ant-spin-dot-spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -80px;
+        .ant-spin-dot-item{
+            background-color: @themeColor !important;
+        }
+    }
+}
+.startLoading{
+    width: 100%;
+    position: relative;
+    .ant-spin-dot-spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -40px;
+        width: 36px;
+        height: 36px;
+        margin-left: -18px;
+        .ant-spin-dot-item{
+            width: 18px;
+            height: 18px;
+            background-color: @themeColor;
+        }
+    }
+}
+.ant-pagination-item-link{
+    .anticon{
+        color: @borderDefault !important;
+        &:hover{
+            color: @themeColor !important;
+        }
+    }
+}
+.ant-pagination-disabled{
+    .ant-pagination-item-link{
+        .anticon{
+            &:hover{
+                color: @borderDefault !important;
+            }
+        }
+    }
+}
+.ant-pagination-simple-pager{
+    border: 1px solid @borderDefault !important;
+    padding: 0px 5px !important;
+    color: @textDefault ;
+    padding-right: 14px !important;
+    font-size: 12px;
+    input {
+        background: transparent !important;
+        border: transparent !important;
+        margin-right: 0 !important;
+        color: @textActive !important;
+        padding: 6px 0 !important;
+        &:focus{
+        background: transparent !important;
+        border: transparent !important;
+        box-shadow:none !important;
+        }
+    }
+    .ant-pagination-slash{
+        margin: 0 ;
+        margin-right: 10px !important;
+        color: @textDefault !important;
+    }
+}
+.ant-tooltip{
+    background: @buttonDetailDefault !important;
+    line-height:18px !important;
+    padding-bottom: 0 !important;
+    .ant-tooltip-content {
+    border: 1px solid @borderDefault !important;
+    .ant-tooltip-arrow{
+        display: none !important;
+    }
+    .ant-tooltip-inner {
+      span {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+button[ant-click-animating-without-extra-node]:after {
+    border: 0 none !important;
+    opacity: 0 !important;
+    animation:none 0 ease 0 1 normal !important;
+}
+span[ant-click-animating-without-extra-node]:after {
+    border: 0 none !important;
+    opacity: 0 !important;
+    animation:none 0 ease 0 1 normal !important;
+}
+.ant-btn {
+    background: @buttonDefault  !important;
+    border: none !important;
+    border-radius: 0px !important;
+    font-weight: 400 !important;
+    &:hover {
+        background: @buttonHover  !important;
+        color: rgba(0, 0, 0, 0.85) !important;
+    }
+
+    &:focus {
+        background: @buttonHover  !important;
+        color: rgba(0, 0, 0, 0.85) !important;
+    }
+
+    &:disabled {
+        background: @buttonDisabled  !important;
+        color: @textDefault  !important;
+
+        svg {
+            fill: @textDefault  !important;
+        }
+    }
+
+    &.ant-btn-cancel {
+        font-weight: 400 !important;
+        background: @buttonDetailDefault  !important;
+        border: 1px solid @borderDefault  !important;
+        color: @textEffect  !important;
+    }
+
+    &.ant-btn-primary {
+        color: rgba(0, 0, 0, 0.85);
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+}
+
+.ant-modal {
+    padding-bottom: 120px !important;
+    .ant-modal-header {
+        background: @backgroundColor;
+        border: none;
+        padding:16px 16px 0;
+        .ant-modal-title {
+            color: @textActive;
+        }
+    }
+
+    .ant-modal-content {
+        background: @backgroundColor;
+
+        .ant-modal-body {
+            padding:16px 16px;
+        }
+
+        .ant-modal-close {
+            .ant-modal-close-x{
+                .modal-icon-close{
+                    width: 20px;
+                    height: 20px;
+                    fill: @textDefault;
+                    &:hover {
+                        fill: @textActive;
+                    }
+                }
+            }
+            .ant-modal-close-icon {
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: @textDefault;
+
+                    &:hover {
+                        fill: @textActive;
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-modal-footer {
+        border: none;
+        padding: 16px 16px;
+    }
+
+    .ant-modal-close-x {
+        color: @textDefault;
+
+        &:hover {
+            color: @textActive;
+        }
+    }
+}
+
+.wallet-modal {
+    // height: 100% !important;
+    background: @backgroundColor;
+    // max-height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 0px !important;
+    .ant-modal-content{
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+  }
+
+.ant-input {
+    background: transparent !important;
+    border: none !important;
+    color: @textActive  !important;
+    border: none;
+    outline: none;
+    &:active {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    &:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+.ant-input-affix-wrapper {
+    background: @cardEnter !important;
+    border: 1px solid @borderDefault !important;
+    outline: none !important;
+    &:not(.ant-input-affix-wrapper-disabled):hover{
+        border: 1px solid @borderDefault !important;
+        box-shadow: none !important;
+    }
+    &:active {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    &:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .ant-input-suffix {
+      color: @textActive !important;
+    }
+    input {
+      text-align: center !important;
+    }
+  }
+  .ant-input-affix-wrapper-focused{
+    box-shadow: none !important;
+  }
+  .slippage-input-waring{
+    border: 1px solid #ffca68 !important;
+    &:not(.ant-input-affix-wrapper-disabled):hover{
+        border: 1px solid #ffca68 !important;
+        box-shadow: none !important;
+    }
+  }
+  .slippage-input-error{
+    border: 1px solid #ff6868 !important;
+    &:not(.ant-input-affix-wrapper-disabled):hover{
+        border: 1px solid #ff6868  !important;
+        box-shadow: none !important;
+    }
+  }
+  .slippage-input{
+    input {
+        text-align: right !important;
+      }
+  }
+
+.ant-notification-copy {
+    width: 400px;
+    height: 56px;
+    background: @backgroundColor !important;
+
+    .ant-notification-notice-content {
+        .ant-notification-notice-message {
+            margin-left: 24px;
+            margin-bottom: 0;
+
+            .notification-title {
+                span {
+                    color: @themeColor;
+                    margin-left: 12px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .ant-notification-notice-with-icon {
+            .ant-notification-notice-icon {
+                .icon {
+                    width: 16px;
+                    height: 16px;
+                    fill: @themeColor;
+                }
+            }
+        }
+    }
+
+    .ant-notification-notice-close {
+        .ant-notification-close-x {
+            .modal-icon-close {
+                width: 20px;
+                height: 20px;
+                fill: @textActive;
+            }
+        }
+    }
+}
+.ant-notification-notice{
+    background: #1b1b1b !important;
+    height: 100% !important;
+    z-index: 99;
+    .ant-notification-notice-content{
+        height: 100% !important;
+    }
+}
+
+.ant-notification-swap {
+    height: 104px;
+
+    .ant-notification-notice-description {
+        margin-left: 0px !important;
+        height: 100% !important;
+        .notification-title {
+            .notification-text {
+                color: @textDefault;
+            }
+
+            a {
+                color: @themeColor;
+                margin-top: 5px;
+                &:hover{
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
+
+.ant-notification-warning .ant-notification-notice-content .ant-notification-notice-message .notification-title span {
+    color: @textTips;
+}
+
+.ant-notification-loading {
+    height: 104px;
+    .ant-notification-notice-icon{
+        svg{
+            animation: exchange 2s infinite linear;
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+        }
+    }
+    .ant-notification-notice-description {
+        margin-left: 0px !important;
+
+        .notification-title {
+            .notification-text {
+                font-size: 12px;
+                width: 242px;
+                color: @textActive;
+                line-height: 20px;
+                margin-top: 8px;
+            }
+
+            a {
+                color: @themeColor;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .ant-notification-notice-message {
+        .notification-title {
+            span {
+                color: @textActive  !important;
+            }
+        }
+    }
+}
+
+.ant-notification-error {
+    height: 76px;
+
+    .ant-notification-notice-content {
+        .ant-notification-notice-icon {
+            .icon {
+                width: 16px;
+                height: 16px;
+                fill: @textWarning;
+            }
+        }
+
+        .ant-notification-notice-with-icon .ant-notification-notice-description {
+            margin-left: 0;
+            color: @textDefault;
+        }
+    }
+}
+
+.ant-notification-error .ant-notification-notice-content .ant-notification-notice-message .notification-title span {
+    color: @textWarning;
+}
+.ant-notification-error .ant-notification-notice-content .ant-notification-notice-icon .icon {
+    fill: @textWarning !important;
+}
+
+
+.ant-slider {
+    .ant-slider-track {
+        background: @themeColor !important;
+        border-radius: 0 !important;
+    }
+    .ant-slider-handle {
+        border: none !important;
+    }
+    .ant-slider-rail{
+        background: #202020 !important;
+        border-radius: 0 !important;
+    }
+}
+@keyframes exchange {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  

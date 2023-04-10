@@ -1,0 +1,36 @@
+// {
+//   // https://v3.nuxtjs.org/concepts/typescript
+//   "extends": "./.nuxt/tsconfig.json"
+// }
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "resolveJsonModule":true,
+    "allowSyntheticDefaultImports" : true ,
+    "esModuleInterop" : true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "types": ["@nuxt/types", "@types/node"]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist",
+    "src/static",
+    // "src/pages/jupswap.vue",
+    // "src/components/CoinSelectJup.vue",
+    // "src/components/CoinBlockJup.vue"
+  ]
+}
